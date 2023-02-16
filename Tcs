@@ -1,0 +1,110 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    char d,c,t,s,b;
+    int a;
+    cin>>d>>a;
+    if (d=='c')
+    {
+        if(a==1)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Espresso Coffee!";
+        }
+        else if(a==2)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Cappuccino Coffee!";
+        }
+        else if(a==3)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Latte Coffee!";
+        }
+        else 
+        {
+            cout<<"INVALID OUTPUT!";
+        }
+    }
+    else if(d=='t')
+    {
+         if(a==1)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Plain Tea!";
+        }
+        else if(a==2)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Assam Tea!";
+        }
+        else if(a==3)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Latte Ginger Tea!";
+        }
+         else if(a==4)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Cardamom Tea!";
+        }
+        else if(a==5)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Masala Tea!";
+        }
+        else if(a==6)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Lemon Tea!";
+        }
+        else if(a==7)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Green Tea!";
+        }
+        else if(a==8)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Organic Darjeeling Tea!";
+        }
+        else 
+        {
+            cout<<"INVALID OUTPUT!";
+        }
+    }
+    else if (d=='s')
+    {
+          if(a==1)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Hot and Sour Soup!";
+        }
+        else if(a==2)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Veg Corn Soup!";
+        }
+        else if(a==3)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Tomato Soup!";
+        }
+         else if(a==4)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Spicy Tomato Soup!";
+        }
+          else 
+        {
+            cout<<"INVALID OUTPUT!";
+        }
+    }
+    else (d=='b');
+    {
+      
+          if(a==1)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Hot Chocolate drink!";
+        }
+        else if(a==2)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Badam Drink!";
+        }
+        else if(a==3)
+        {
+            cout<<"Welcome to CCD!"<<endl<<"Enjoy your Badam-pista Drink!";
+        }  
+          else 
+        {
+            cout<<"INVALID OUTPUT!";
+        }
+    }
+    
+}
