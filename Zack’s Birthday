@@ -1,0 +1,56 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b;
+    switch (b)
+    {
+        case 1:
+        {
+            c=(a*20)/100;
+            cout<<"Zack's father needs to pay Rs."<<a-c<<".00";
+        }
+        break;
+        case 3:
+        case 4:
+        {
+            c=(a*10)/100;
+            cout<<"Zack's father needs to pay Rs."<<a-c<<".00";
+        }
+        break;
+        case 6:
+        case 7:
+        {
+            c=(a*75)/100;
+            cout<<"Zack's father needs to pay Rs."<<a-c<<".00";
+        }
+        break;
+        case 10:
+        case 11:
+        {
+            c=(a*30)/100;
+            cout<<"Zack's father needs to pay Rs."<<a-c<<".00";
+        }
+        break;
+        case 12:
+        {
+            c=(a*35)/100;
+            cout<<"Zack's father needs to pay Rs."<<a-c<<".00";
+        }
+        break;
+        case 2:
+        case 5:
+        case 8:
+        case 9:
+        {
+           cout<<"Zack's father needs to pay Rs."<<a<<".00";
+        }
+        break;
+        default:
+    {
+        cout<<"Invalid input";
+    }
+    }
+    
+}
