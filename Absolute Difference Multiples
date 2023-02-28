@@ -1,0 +1,13 @@
+#include <iostream> 
+using namespace std; 
+int main() 
+{ 
+int N1, N2; 
+cin >> N1 >> N2; 
+int diff = abs(N1 - N2); 
+for(int ctr = 1; ctr <= 10; ctr++) 
+{ 
+cout << ctr*diff << " "; 
+} 
+return 0;
+}
