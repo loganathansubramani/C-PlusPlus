@@ -1,0 +1,20 @@
+#include <iostream> using namespace std; 
+int main()
+{
+char ch; 
+cin >> ch; 
+if(ch == 'a') 
+{
+cout << 'z' << ++ch; 
+}
+else if(ch == 'z') 
+{
+cout << --ch << 'a'; 
+}
+else
+{
+cout << --ch;
+++ch;
+cout << ++ch;
+}
+}
