@@ -1,0 +1,25 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    string das="AM";
+    cin>>a;
+    b=a/100;
+    c=a%100;
+    if(b==0)
+    {
+        b=12;
+    }
+    else if(b==12)
+    {
+        das[0]='P';
+    }
+    else if(b>12)
+    {
+        b-=12;
+        das[0]='P';
+    }
+    cout<<setfill('0')<<setw(2)<<b<<":"<<setw(2)<<c<<" "<<das;
+}
