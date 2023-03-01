@@ -1,0 +1,16 @@
+#include <iostream> 
+using namespace std;
+int main() 
+{
+int X, Y, printCtr = 0, printVal = 1; 
+cin >> X >> Y;
+while(printCtr < 10) 
+{
+if(printVal % X == 0 || printVal % Y == 0) 
+{
+cout << printVal << " "; printCtr++;
+}
+printVal++;
+} 
+return 0;
+}
