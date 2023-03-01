@@ -1,0 +1,21 @@
+#include <iostream> 
+using namespace std; 
+int main()
+{ 
+    int X, Y, Z; 
+    cin >> X >> Y >> Z; 
+    if(X % 10 == Y % 10)
+    { 
+        cout << min(X, Y) << " " << max(X, Y) << " " << Z;
+        }
+        else if(Y%10 == Z%10)
+        { 
+            cout << min(Y, Z) << " " << max(Y, Z) << " " << X;
+            } 
+            else 
+            { 
+                cout << min(X, Z) << " " << max(X, Z) << " " << Y;
+                } 
+                return 0; 
+    
+}
