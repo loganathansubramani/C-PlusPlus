@@ -1,0 +1,17 @@
+#include <iostream> 
+using namespace std;
+int main() 
+{
+string str; 
+getline(cin, str); 
+for(int index = 0;
+str[index] != '\0'; 
+index++) 
+{
+if(str[index] != ' ') 
+{
+cout << str[index]; 
+}
+}
+return 0;
+}
