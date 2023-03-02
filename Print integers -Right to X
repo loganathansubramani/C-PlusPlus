@@ -1,0 +1,25 @@
+#include <iostream> 
+using namespace std;
+int main() 
+{
+int N; 
+cin >> N;
+int arr[N], X; 
+for(int index = 0;index < N; index++)
+{
+cin >> arr[index]; 
+}
+cin >> X; 
+for(int index = 0; index < N; index++) 
+{
+if(arr[index] == X) 
+{
+while(index < N) 
+{
+cout << arr[index++] << " "; 
+}
+return 0;
+} 
+}
+return 0; 
+}
