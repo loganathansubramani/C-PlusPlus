@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv)
+{
+    int a, i, n, j;
+    cin >> a;
+    for (i = 1; i <= a; i++)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
+    n = a;
+    for (j = 0; j < a - 2; j++)
+    {
+        cout << ++n << " ";
+        for (int k = 0; k < a - 1; k++)
+        {
+            cout << "* ";
+        }
+        cout << ++n << endl;
+        ++n;
+    }
+    for (i = n; i < n + a; i++)
+    {
+        cout << i << " ";
+    }
+    
+    return 0;
+}
