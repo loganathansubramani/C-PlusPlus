@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, c, d, i;
+    cin >> a >> b >> c >> d;
+    int f = b - a;
+    for (i = 4; i <= d; i++) {
+        c = a + (i - 1) * f;
+    }
+    cout << c;
+    return 0;
+}
