@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+class Juice
+{
+public:
+    string name;
+    int price;
+    Juice(string juiceName, int juicePrice)
+    {
+        name = juiceName;
+        price = juicePrice; // Changed "price juicePrice" to "price = juicePrice"
+    }
+};
+int main()
+{
+    string name;
+    int price;
+    cin >> name >> price;
+    Juice *juice = new Juice(name, price); // Created an instance of the Juice class
+    cout << juice->name << endl;
+    cout << juice->price * 5;
+    delete juice; // Deallocated memory for the dynamically allocated instance
+    return 0;
+}
