@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+class Agent
+{
+public:
+    string name;
+    int salary;
+
+    Agent(string agentName, int agentSalary)
+    {
+        name = agentName;
+        salary = agentSalary;
+    }
+};
+int main()
+{
+    string name;
+    int salary;
+    cin >> name >> salary;
+    Agent agent(name, salary);
+    cout << agent.name << endl;
+    cout << agent.salary;
+    return 0;
+}
