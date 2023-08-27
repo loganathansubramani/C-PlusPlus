@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+void printValues(int val1, int val2) 
+{
+    cout << val1 << " " << val2 << endl;
+}
+void printValues(int val1, const char* val2)
+{
+    cout << val1 << " " << val2 << endl;
+}
+void printValues(double val1, double val2)
+{
+    cout << val1 << " " << val2 << endl;
+}
+int main() 
+{
+    printValues(10, 20);
+    printValues(30, "SkillRack");
+    printValues(2.5, 7.5);
+    return 0;
+}
