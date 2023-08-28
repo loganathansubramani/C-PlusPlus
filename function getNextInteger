@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int getNextInteger()
+{
+    static int num = 0;
+    return ++num;
+}
+int main()
+{
+    cout << getNextInteger() << endl;
+    cout << getNextInteger() << endl;
+    cout << getNextInteger() << endl;
+    return 0;
+}
