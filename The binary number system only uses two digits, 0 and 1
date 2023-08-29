@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int loga(char* str)
+{
+    int l=0;
+    int ans=str[0]-'0';
+    for(l=0;str[l]!='\0';l++);
+    for(int i=1;i<l-1;i+=2)
+    {
+        int j=i+1;
+        if(str[i]=='A')
+        {
+            ans=ans & (str[j]-'0');
+        }
+        else if(str[i]=='B')
+        {
+            ans=ans | (str[j]-'0');
+        }
+        else if(str[i]=='C')
+        {
+            ans=ans ^ (str[j]-'0');
+        }
+    }
+    return ans;
+}
+int main()
+{
+    char str[100];
+    cin>>str;
+    cout<<loga(str);
+}
