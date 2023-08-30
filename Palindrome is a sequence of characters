@@ -1,0 +1,28 @@
+#include<bits/stdc++.h>
+using namespace std;
+int checkPalindrome(char s[],int i,int j)
+{
+while(i<j)
+{
+if(s[i] != s[j])
+return 0;
+i++;
+j--;
+}
+return 1;
+}
+int main()
+{
+char inp[30];
+cin>>inp;
+int n=strlen(inp);
+int i;
+for(i=0;i<n;i++)
+{
+if(checkPalindrome(inp,i,n-1))
+break;
+}
+for(int j = i-1; j >= 0; j--)
+cout<<inp[j];
+return 0;
+}
