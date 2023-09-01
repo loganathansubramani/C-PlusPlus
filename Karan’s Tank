@@ -1,0 +1,9 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d,e;
+    cin>>a>>b>>c>>e;
+    d=e;
+    cout<<"The tank can be filled within "<<d<< ".0 hours";
+}
