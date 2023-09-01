@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d,e,f,g,h,i,j,k,l;
+    cin>>a>>b>>c;
+    if (c>=60)
+   {
+    d=(c/60);
+    e=(c%60);
+    f=(b+d);
+    if(f>=60)
+    {
+     g=f/60;
+     h=f%60;
+     i=a+g;
+     cout<<"Total Number of hours is "<<i<<endl;
+     cout<<"Total Number of minutes is "<<h<<endl;
+     cout<<"Total Number of seconds is "<<e<<endl;
+    }
+    else
+    {
+    cout<<"Total Number of hours is "<<a<<endl;
+    cout<<"Total Number of minutes is "<<f<<endl;
+    cout<<"Total Number of seconds is "<<e<<endl;
+    }
+   }
+   else 
+  {
+     if(b>=60)
+     {
+     j=b%60;
+     k=b/60;
+     l=k+a;
+    cout<<"Total Number of hours is "<<l<<endl;
+    cout<<"Total Number of minutes is "<<j<<endl;
+    cout<<"Total Number of seconds is "<<c<<endl;
+     }
+     else 
+     {
+    cout<<"Total Number of hours is "<<a<<endl;
+    cout<<"Total Number of minutes is "<<b<<endl;
+    cout<<"Total Number of seconds is "<<c<<endl;
+     }
+  }
+}
