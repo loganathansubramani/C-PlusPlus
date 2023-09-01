@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,e,f;
+    char l[10];
+    cin>>l>>a>>b>>c;
+    e=(c*b);
+    f=(a-c);
+    cout<<"Amount for "<<c<<" "<<l<<" is "<<e<<endl;
+    cout<<"Remaining number of pencil present in stock is "<<f;
+}
