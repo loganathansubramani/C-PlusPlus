@@ -1,0 +1,52 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cin>>a>>b>>c;
+    if (a>=b&&a>=c)
+    {
+        if(b>=c)
+        {
+            cout<<"The treasure is in box which has number "<<b<<endl;
+        }
+        else
+        {
+           cout<<"The treasure is in box which has number "<<c<<endl; 
+        }
+    }
+    else if(b>=a&&b>=c)
+    {
+        if(a>=c)
+        {
+            cout<<"The treasure is in box which has number "<<a<<endl;
+        }
+        else
+        {
+            cout<<"The treasure is in box which has number "<<c<<endl;
+        }
+    }
+    else 
+    {
+        if(b>=a)
+        {
+            cout<<"The treasure is in box which has number "<<b<<endl;
+        }
+        else 
+        {
+            cout<<"The treasure is in box which has number "<<a<<endl;
+        }
+    }
+    if (a%2==0 && b%2==0 && c%2==0)
+    {
+        cout<<"The code to open the box is 2.";
+    }
+    else if (a%3==0 && b%3==0 && c%3==0)
+    {
+        cout<<"The code to open the box is 3.";
+    }
+    else
+    {
+        cout<<"The code to open the box is 1.";
+    }
+}
