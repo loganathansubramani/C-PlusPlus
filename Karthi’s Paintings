@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,d,e,f,p,q,r,z;
+    cin>>a>>b>>c>>d>>e>>f;
+    p=(a*b);
+    q=(c*d);
+    r=(e*f);
+    z=(q+r);
+    if(p>z)
+    {
+        cout<<"Karthi can fix both painting";
+    }
+    else
+    {
+        cout<<"Karthi cannot fix both painting";
+    }
+}
