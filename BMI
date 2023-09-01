@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    float a,b,c,d,e;
+    cin>>a>>b;
+    c=(b/100);
+    d=c*2;
+    e=a/d;
+    if (e>18&&e<25)
+    {
+        cout<<"You are normal. Go walking daily and maintain it";
+    }
+    else if (e<18)
+    {
+        cout<<"You are underweight. Have an apple daily.";
+    }
+    else 
+    {
+        cout<<"You are obese. Go to doctor";
+    }
+}
