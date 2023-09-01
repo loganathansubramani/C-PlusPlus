@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    char b;
+    cin>>b;
+   int a=int(b);
+    {
+        if (a>=65 && a<=90)
+        {
+            cout<<"Upper";
+        }
+       else if (a>=97 && a<=122)
+       {
+           cout<<"Lower";
+       }
+       else if(a>=49 && a<=57)
+       {
+           cout<<"Number";
+       }
+       else
+       {
+           cout<<"Symbol";
+       }
+    }
+}
