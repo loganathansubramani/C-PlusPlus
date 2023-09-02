@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int z,a,b,c,d,e;
+    cin>>z;
+    a=z/1000;
+    b=(z%1000)/100;
+    c=((z%1000)%100)/10;
+    d=((z%1000)%100)%10;
+    e=(a+b+c+d);
+    if(z%e==0)
+    {
+        cout<<"Harshard Number";
+    }
+    else
+    {
+        cout<<"Not Harshard Number";
+    }
+}
