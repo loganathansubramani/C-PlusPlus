@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,b=1,a=0,i,c;
+    cin>>n;
+    for(i=0;i<=100;i++)
+    {
+        c=a+b;
+        if(n==c)
+        {
+            break;
+        }
+        a=b;
+        b=c;
+    }
+    if(n==c)
+    {
+        cout<<"Fibonacci number";
+    }
+    else
+    {
+        cout<<"Not Fibonacci number";
+    }
+}
