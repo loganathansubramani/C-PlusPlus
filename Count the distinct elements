@@ -1,0 +1,50 @@
+1)
+#include<iostream>
+using namespace std;
+int main() 
+{
+    int a;
+    int count=0;
+    cin>>a;
+    int ar[a];
+    for(int i=0;i<a;i++)
+    {
+        cin>>ar[i];
+    }
+    for(int i=0;i<a;i++)
+    {
+       
+        bool loga=true;
+        for(int j=0;j<i;j++)
+       {
+        if(ar[i]==ar[j])
+         {
+            loga=false;
+            break;
+         }
+        }
+       if(loga)
+       {
+           count++;
+       }
+    }
+    cout<<count;
+}
+2)
+#include<iostream>
+#include<unordered_set>
+using namespace std;
+int main() {
+    int n; 
+    cin >> n;
+    int ar[n]; 
+    unordered_set<int> distinctElements; 
+    for(int i = 0; i < n; i++)
+    {
+        cin >> ar[i];
+        distinctElements.insert(ar[i]); 
+    }
+    int count = distinctElements.size(); 
+    cout << count << endl; 
+    return 0;
+}
