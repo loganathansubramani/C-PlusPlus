@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;
+    int ar[a];
+    for(int i=0;i<a;i++)
+    {
+    cin>>ar[i];
+    }
+    int b;
+    cin>>b;
+    bool loga=false;
+    for(int i=0;i<a;i++)
+    {
+     if(ar[i]==b)
+     {
+         loga=true;
+     }
+    } 
+    if(loga){
+    cout<<b<<" is present in the array";
+    }
+    else
+    {
+    cout<<b<<" is not present in the array";
+    }
+} 
