@@ -1,0 +1,32 @@
+#include<iostream>
+#include<iomanip>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int a,sum=0,sum1=0;
+    float even,odd,b,c;
+    while (a!=-1)
+    {
+        cin>>a;
+        if(a>-1)
+        {
+            if(a%2==0)
+            {
+                sum=sum+a;
+                even++;
+            }
+            else
+            {
+                sum1=sum1+a;
+                odd++;
+            }
+        }
+    }
+    cout<<sum<<endl;
+        cout<<sum1<<endl;
+        b=sum/even;
+        c=sum1/odd;
+        cout<<fixed<<setprecision(2)<<b<<endl;
+        cout<<fixed<<setprecision(2)<<c;
+}
