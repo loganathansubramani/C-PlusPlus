@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(int argc, char** argv)
+{
+ string a;
+ cin>>a;
+ int n=a.length();
+ for(int i=0;i<n;i++)
+ {
+     bool loga=false;
+     if(a[i]=='_')
+     {
+         loga=true;
+         
+     }
+     if(loga)
+     {
+         for(int j=i-1;j>=0;j--)
+         {
+             cout<<a[j];
+         }
+         for(int j=i;j<n;j++)
+         {
+             cout<<a[j];
+         }
+     }
+ }
+}
