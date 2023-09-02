@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,count=0;
+    cin>>a>>b;
+    int c[a][b];
+    for(int i=0;i<a;i++)
+    {
+        for(int j=0;j<b;j++)
+        {
+            cin>>c[i][j];
+            count+=c[i][j];
+        }
+    }
+    cout<<"The sum of the elements in the matrix is "<<count;
+}
