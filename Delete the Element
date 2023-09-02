@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cin>>a;
+    int arr[a];
+    for(int i=0;i<a;i++)
+    {
+        cin>>arr[i];
+    }
+    cin>>b;
+    bool loga=false;
+     for(int i=0;i<a;i++)
+    {   
+        
+        if(arr[i]==b)
+        {
+            loga=true;
+            break;
+        }
+    }
+    if(loga)
+    {
+        for(int i=0;i<a;i++)
+        {
+            if(arr[i]!=b)
+            {
+                cout<<arr[i]<<endl;
+            }
+            
+        }
+    }
+     else
+        {
+            cout<<"Invaild Input";
+        }
+}
