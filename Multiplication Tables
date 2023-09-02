@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,c,i;
+    cin>>a>>b;
+    for(i=1;i<=b;i++)
+    { 
+        c=a*i;
+       
+        cout<<a<<" * "<<i<<" = "<<c<<endl;
+    }   
+}
