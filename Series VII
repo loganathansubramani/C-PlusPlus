@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b=10,c,i;
+    c=b/2;
+    cin>>a;
+    cout<<b<<" "<<c<<" ";
+    for(i=1;i<=a;i++)
+    {
+    b=b+50;
+    c=c+10;
+    cout<<b<<" "<<c<<" ";
+        
+    }
+}
