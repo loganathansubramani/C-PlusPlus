@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,min=9999,max=-9999;
+    cin>>a;
+    int ar[a];
+    for(int i=0;i<a;i++)
+    {
+        cin>>ar[i];
+    }
+    for(int i=0;i<a;i++)
+    {
+        if(ar[i]<min)
+        {
+            min=ar[i];
+        }
+    }
+    for(int i=0;i<a;i++)
+    {
+        if(ar[i]>max)
+        {
+            max=ar[i];
+        }
+    }
+    cout<<"Minimum value in the array is "<<min<<endl;
+    cout<<"Maximum value in the array is "<<max;
+}
