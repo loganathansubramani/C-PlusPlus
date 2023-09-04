@@ -1,0 +1,19 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a; 
+    for(int i=1;i<=a;i++)   // 1 4 27 16 125
+    {
+        if(i%2==1)
+        {
+            cout<<pow(i,3)<<" ";
+        }
+        else
+        {
+            cout<<pow(i,2)<<" ";
+        }
+    }
+}
