@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cin>>a;  
+    int sum=101; //101 103 107 109 113 
+    for(int i=0;i<a;i++)
+    {
+        sum+=(2*i);
+        cout<<sum<<" ";
+    }
+}
