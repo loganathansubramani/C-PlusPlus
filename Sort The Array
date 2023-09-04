@@ -1,0 +1,38 @@
+1) In decreasing order
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+    int q;
+    cin>>q;
+    int ar[q];
+    for(int i=0;i<q;i++)
+    {
+        cin>>ar[i];
+    }
+    sort(ar,ar+q);
+    for(int i=q-1;i>=0;i--)
+    {
+        cout<<ar[i]<<" ";
+    }
+}
+2) In increasing order
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main()
+{
+    int q;
+    cin>>q;
+    int ar[q];
+    for(int i=0;i<q;i++)
+    {
+        cin>>ar[i];
+    }
+    sort(ar,ar+q);
+    for(int i=0;i<q;i++)
+    {
+        cout<<ar[i]<<" ";
+    }
+}
