@@ -1,0 +1,41 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(int argc, char** argv)
+{
+ string input;
+ cin>>input;
+ int a,b;
+ char c;
+ sscanf(input.c_str(),"%d%c%d",&a,&c,&b);
+ switch(c)
+ {
+     case 'A':
+     case 'a':
+     cout<<a+b;
+     break;
+     case 'S':
+     case 's':
+     cout<<a-b;
+     break;
+     case 'M':
+     case 'm':
+     cout<<a*b;
+     break;
+     case 'D':
+     case 'd':
+     if(b!=0)
+     {
+         cout<<a/b;
+         break;
+     }
+     else
+     {
+         cout<<"Division by zero is not allowed ";
+         break;
+     }
+     default :
+     cout<<"Invalid Operation";
+     break;
+ }
+
+}
