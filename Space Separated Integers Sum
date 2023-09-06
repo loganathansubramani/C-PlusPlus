@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string inputLine;
+    getline(cin, inputLine);
+    istringstream a(inputLine);
+    int number, sum = 0;
+    while (a >> number) {
+        sum += number;
+    }
+    cout << sum << endl;
+    return 0;
+}
