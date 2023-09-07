@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,i,sum=0;
+    cin>>a;
+    int c[a];
+    for(i=0;i<a;i++)
+    {
+        cin>>c[i];
+    }
+     for(i=0;i<a;i++)
+    {
+        sum=sum+c[i];
+    }
+    cout<<sum;
+}
