@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b,i,f=0;
+    cin>>a;
+    int c[a],d[a];
+    for(i=0;i<a;i++)
+    {
+        cin>>c[i]>>d[i];
+    }
+    for(i=0;i<a;i++)
+    {
+    if(c[i]==d[i])
+    {
+       f=0;
+    }
+    else
+    {
+        f=1;
+    }
+    }
+    if(f==0)
+    {
+        cout<<"Same";
+    }
+    else
+    {
+        cout<<"Not Same";
+    }
+}
