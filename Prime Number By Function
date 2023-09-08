@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+bool isprimenumber(int num)
+{
+    for(int i=2;i<num;i++)
+    {
+        if(num%i==0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+int main()
+{
+    int a,b;
+    cin>>a>>b;
+    for(int i=a;i<=b;i++)
+    {
+        bool isprime =isprimenumber(i);
+        if(isprime)
+        {
+            cout<<i<<" is Prime number\n";
+        }
+        else
+        {
+            cout<<i<<" is not a Prime number\n";
+        }
+    }
+}
