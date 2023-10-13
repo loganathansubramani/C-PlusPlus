@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,j=0,k=0,r=30,s=35;
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        if(i%2==0){
+            r = r+j;
+            cout << r << " ";
+            j = j+8;
+        }
+        else{
+            s = s+k;
+            cout << s <<" ";
+            k = k+6;
+        }
+    }
+    return 0;
+}
