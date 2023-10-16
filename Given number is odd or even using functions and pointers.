@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+void oddoreven(int *a)
+{
+    cout<<*a<<" is";
+    (*a%2==0)?cout<<" even":cout<<" odd";
+}
+int main()
+{
+    int a;
+    cin>>a;
+    oddoreven(&a);
+    return 0;
+}
