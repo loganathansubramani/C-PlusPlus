@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int m, n;
+    cin >> m >> n;
+    int matrix[m][n]; 
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
+            cin >> matrix[i][j];
+        }
+    }
+    for (int i = 0; i < m; i++) 
+    {
+        int maxRowElement = matrix[i][0]; 
+        for (int j = 1; j < n; j++) 
+        {
+            if (matrix[i][j] > maxRowElement) 
+            {
+                maxRowElement = matrix[i][j];
+            }
+        }
+        cout << maxRowElement << endl;
+    }
+    return 0;
+}
